@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>运动</title>
+    <link href="/FitTick/public/css/exercise.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="background">
+    <div id="head_wrapper">
+        <header>
+            <div id="dlogo">
+                <img id="logo" src="/FitTick/public/pictures/logo.png">
+            </div>
+            <div id="nav">
+                <nav class="container">
+                    <ul>
+                        <li><a href="home.html">首页</a></li>
+                        <li><a href="exercise.html">运动</a></li>
+                        <li><a href="activity.html">活动</a></li>
+                        <li><a href="circle.html">圈子</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+
+            <div id="search">
+                <div class="first">
+
+                    <input id="textfield" onKeyup="getContent(this);" type="text"
+                           placeholder="请输入昵称...">
+                    <img id="searchimg" src="/FitTick/public/pictures/search.png">
+                </div>
+
+            </div>
+
+        </header>
+    </div>
+
+    <div id="mainContent">
+        <div id="leftNav">
+            <nav class="container">
+                <ul>
+                    <li><a href="exercise.html">我的运动</a></li>
+                    <li><a href="exerciseAnalysis.html">运动分析</a></li>
+                    <li><a href="sleepAnalysis.html">睡眠分析</a> </li>
+                    <li><a href="healthManage.html">身体管理</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="main">
+            <div id="condition">
+                <div id="threecircles">
+                    <div class="circle" id="stepcircle">
+                        <div class="circle" id="timecircle">
+                            <div class="circle" id="calcircle"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="intro">
+                    <div class="circle" id="smallstep"></div>
+                    <div class="circle" id="smalltime"></div>
+                    <div class="circle" id="smallcal"></div>
+
+                    <div class="briefintro" id="stepintro">步数</div>
+                    <div class="rate" id="steprate">70%</div>
+
+                    <div class="briefintro" id="timeintro">时长</div>
+                    <div class="rate" id="timerate">50%</div>
+
+                    <div class="briefintro" id="calintro">热量</div>
+                    <div class="rate" id="calrate">90%</div>
+
+                    <div class="nums" id="stepnums">7000</div>
+                    <div class="split" id="stepsplit">/</div>
+                    <div class="goal" id="stepgoal">10000</div>
+                    <div class="unit" id="stepunit">步</div>
+
+                    <div class="nums" id="timenums">15</div>
+                    <div class="split" id="timesplit">/</div>
+                    <div class="goal" id="timegoal">30</div>
+                    <div class="unit" id="timeunit">分钟</div>
+
+                    <div class="nums" id="calnums">450</div>
+                    <div class="split" id="calsplit">/</div>
+                    <div class="split" id="calgoal">500</div>
+                    <div class="unit" id="calunit">卡路里</div>
+
+                </div>
+
+            </div>
+
+            <div id="chart"></div>
+
+            <div id="total"></div>
+
+        </div>
+    </div>
+
+
+</div>
+</body>
+</html>

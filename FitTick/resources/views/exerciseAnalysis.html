@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>运动分析</title>
+    <link href="/FitTick/public/css/exerciseAnalysis.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="background">
+    <div id="head_wrapper">
+        <header>
+            <div id="dlogo">
+                <img id="logo" src="/FitTick/public/pictures/logo.png">
+            </div>
+            <div id="nav">
+                <nav class="container">
+                    <ul>
+                        <li><a href="home.html">首页</a></li>
+                        <li><a href="exercise.html">运动</a></li>
+                        <li><a href="activity.html">活动</a></li>
+                        <li><a href="circle.html">圈子</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+
+            <div id="search">
+                <div class="first">
+
+                    <input id="textfield" onKeyup="getContent(this);" type="text"
+                           placeholder="请输入昵称...">
+                    <img id="searchimg" src="/FitTick/public/pictures/search.png">
+                </div>
+
+            </div>
+
+        </header>
+    </div>
+
+    <div id="mainContent">
+        <div id="leftNav">
+            <nav class="container">
+                <ul>
+                    <li><a href="exercise.html">我的运动</a></li>
+                    <li><a href="exerciseAnalysis.html">运动分析</a></li>
+                    <li><a href="sleepAnalysis.html">睡眠分析</a> </li>
+                    <li><a href="healthManage.html">身体管理</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="main">
+            <div id="rateintro">目标总体完成率</div>
+            <div id="rate">85%</div>
+
+            <div id="stepchart"></div>
+
+            <div id="timechart"></div>
+
+            <div id="calchart"></div>
+        </div>
+
+
+    </div>
+</div>
+</body>
+</html>

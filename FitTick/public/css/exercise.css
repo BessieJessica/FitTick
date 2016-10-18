@@ -1,0 +1,468 @@
+@CHARSET "UTF-8";
+
+/*------导航栏------*/
+#head_wrapper {
+    display: block;
+    width: 1500px;
+    height: 60px;
+    background-color: rgb(113,125,136);
+}
+
+div#dlogo{
+    position: absolute;
+    left:20px;
+    height: 50px;
+}
+
+img#logo{
+    position: absolute;
+    top: 10px;
+    height: 35px;
+}
+
+div#background {
+    display: block;
+    /* may occur bug in ie */
+    /*background-color:white;*/
+    background: #000000;
+    background: -moz-linear-gradient(top, #cac0d9 0%, #73717b 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #73717b),
+    color-stop(100%, rgba(83, 141, 159, 0.7)));
+    background: -webkit-linear-gradient(top, #ffffff 0%, rgba(83, 141, 159, 0.6) 100%);
+    background: -o-linear-gradient(top, rgb(255, 255, 255) 0%, rgba(83, 141, 159, 0.6) 100%);
+    background: -ms-linear-gradient(top, #ffffff 0%, rgba(83, 141, 159, 0.61) 100%);
+    background: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgba(83, 141, 159, 0.6) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a1c39',
+    endColorstr='#888790', GradientType=0);
+    width: 1500px;
+    height: 1400px;
+}
+
+div#search {
+    position: absolute;
+    vertical-align: top;
+    width: 230px;
+    height: 20px;
+    left: 1000px;
+    top: 30px;
+}
+
+div#avatar{
+    position:absolute;
+    top:15px;
+    left:40px;
+    width: 230px;
+    height: 300px;
+}
+
+img#avatarimg {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+}
+
+div#personInfo {
+    position: absolute;
+    top: 180px;
+    left: 67px;
+    color: #b7becf;
+    font-size: 18px;
+    font-family: "微软雅黑", Arial, Helvetica, sans-serif;
+}
+
+input[type="text"] {
+    background-color: rgba(110, 110, 110, 0.3);
+    color: #fff;
+    border: solid 0px #ccc;
+    line-height: 40px;
+    font-size: 15px;
+    height: 30px;
+    padding-left: 10px;
+    width: 165px;
+    display: inline-block;
+    vertical-align: top;
+    font-family: "微软雅黑", Arial, Helvetica, sans-serif;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+}
+
+input[type="submit"] {
+    position: absolute;
+    background-color: rgba(28, 38, 49, 0.4);
+    color: #fff;
+    border: solid 1px #9ab1d2;
+    height: 30px;
+    width: 50px;
+    right: -5px;
+    top: 0px;
+    font-size:14px;
+    font-family: "微软雅黑", Arial, Helvetica, sans-serif;
+
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 2px 2px 2px #575b67;
+    -moz-box-shadow: 2px 2px 2px #575b67;
+    box-shadow: 2px 2px 2px #575b67;
+}
+
+img#searchimg {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 60px;
+    top: 8px;
+}
+
+.first {
+    border: solid #454e59 0px;
+    width: 178px;
+}
+
+div#nav {
+    position: absolute;
+    left: 100px;
+    display: inline-block;
+    width: 700px;
+    height: 50px;
+}
+
+div#nav nav li {
+    display: inline-block;
+    line-height: 20px;
+    padding: 10px;
+    margin-left: 90px;
+    -webkit-transition: background-color 0.2s linear;
+}
+
+div#nav nav a {
+    color: #dedede;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: "微软雅黑", Arial, Helvetica, sans-serif;
+}
+
+div#nav nav li.on, div#nav nav a:hover {
+    color: #FFFFFF;
+}
+
+
+/*-----MAIN CONTENT-----*/
+div#mainContent {
+    width: 1480px;
+    height: 1300px;
+    padding: 10px;
+    padding-top: 30px;
+}
+
+div#leftNav{
+    position: absolute;
+    top: 80px;
+    /*left: 30px;*/
+    /*background-color: #9ab1d2;*/
+    background-color: rgba(87,195,192,0.6);
+    /*background-color: rgba(63, 75, 85, 0.5);*/
+    width: 300px;
+    height: 1300px;
+    border: 0px solid #464b5a;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 5px;
+    -webkit-box-shadow: 2px 3px 3px 2px rgba(87, 91, 103, 0.36);
+    -moz-box-shadow: 2px 3px 3px 2px rgba(87, 91, 103, 0.28);
+    box-shadow: 2px 3px 3px 2px rgba(87, 91, 103, 0.31);
+    color: #FFFFFF;
+}
+
+div#leftNav nav li{
+    display: block;
+    padding:10px;
+    margin: 50px;
+    color: #FFFFFF;
+}
+
+
+div#leftNav nav a {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    text-decoration: none;
+    font-family: "微软雅黑", Arial, Helvetica, sans-serif;
+
+}
+
+div#leftNav nav li.on, div#leftNav nav a:hover {
+    color: #FFFFFF;
+    font-size: 19px;
+}
+
+/*
+右侧的内容
+包括:运动情况; 运动曲线图; 运动总量
+*/
+div#main{
+    position: absolute;
+    width:1000px;
+    height:1300px;
+    top: 80px;
+    background-color: rgba(87,195,192,0.1);
+    left: 350px;
+    border: 0px solid #464b5a;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 5px;
+    /*-webkit-box-shadow: 1px 1px 1px 1px rgba(87, 91, 103, 0.2);*/
+    /*-moz-box-shadow: 1px 1px 1px 1px rgba(87, 91, 103, 0.2);*/
+    /*box-shadow: 1px 1px 1px 1px rgba(87, 91, 103, 0.2);*/
+    color: #FFFFFF;
+}
+
+/*运动情况*/
+div#condition{
+    position: absolute;
+    width: 1000px;
+    height: 300px;
+    border-bottom: dashed 1px;
+}
+
+div#threecircles{
+    position:absolute;
+    width: 200px;
+    height: 200px;
+    top: 35px;
+    bottom: 35px;
+    left: 100px;
+}
+
+.circle{
+    border-radius: 50%;
+    width:200px;
+    height: 200px;
+}
+
+div#stepcircle{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 20px solid #ff6666;
+}
+
+div#timecircle{
+    position: absolute;
+    width:160px;
+    height:160px;
+    border: 20px solid #ffff66;
+}
+
+div#calcircle{
+    position: absolute;
+    width:120px;
+    height: 120px;
+    border: 20px solid #99cc66;
+}
+
+/*
+圆环边的简要解释
+说明具体的达标比例
+*/
+div#intro{
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    left: 400px;
+    top: 50px;
+    bottom: 50px;
+
+    /*background-color: whitesmoke;*/
+}
+
+.briefintro{
+    position: absolute;
+    width: 35px;
+    height:46px;
+    left: 66px;
+    top: 10px;
+    font-size: 17px;
+    font-family: "微软雅黑", Arial, Helvetica, sans-serif;
+    line-height: 46px;
+    color: rgb(104, 126, 136);
+}
+
+div#stepintro{
+
+}
+
+div#timeintro{
+    top: 75px;
+}
+
+div#calintro{
+    top:140px;
+}
+
+
+.rate{
+    position: absolute;
+    width: 35px;
+    height:46px;
+    left: 103px;
+    top: 10px;
+    font-size: 17px;
+    font-family: "微软雅黑", Arial, Helvetica, sans-serif;
+    line-height: 46px;
+}
+
+div#steprate{
+    color: #ff6666;
+}
+
+div#timerate{
+    color:rgb(255, 255, 102);
+    top: 75px;
+
+}
+
+div#calrate{
+    color: #99cc66;
+    top: 140px;
+}
+
+div#smallstep{
+    position: absolute;
+    top:10px;
+    width: 30px;
+    height: 30px;
+    border: 8px solid #ff6666;
+}
+
+div#smalltime{
+    position: absolute;
+    top: 75px;
+    width:30px;
+    height:30px;
+    border: 8px solid rgb(255, 255, 102);
+}
+
+div#smallcal{
+    position: absolute;
+    top: 140px;
+    width:30px;
+    height: 30px;
+    border: 8px solid #99cc66;
+}
+
+.nums{
+    position: absolute;
+    width: 35px;
+    height:46px;
+    left: 150px;
+
+    font-size: 17px;
+    font-family: "微软雅黑", Arial, Helvetica, sans-serif;
+    line-height: 46px;
+}
+
+div#stepnums{
+    top: 10px;
+    color: #ff6666;
+}
+
+div#timenums{
+    top: 75px;
+    color:rgb(255, 255, 102);
+}
+
+div#calnums{
+    top: 140px;
+    color: #99cc66;
+}
+
+.split{
+    position: absolute;
+    width: 35px;
+    height:46px;
+    left: 198px;
+
+    font-size: 17px;
+    font-family: "微软雅黑", Arial, Helvetica, sans-serif;
+    line-height: 46px;
+    color: rgb(104, 126, 136);
+}
+
+div#stepsplit{
+    top: 10px;
+}
+
+div#timesplit{
+    top: 75px;
+}
+
+div#calsplit{
+    top:140px;
+}
+
+.goal{
+    position: absolute;
+    width: 35px;
+    height:46px;
+    left: 203px;
+    font-size: 17px;
+    font-family: "微软雅黑", Arial, Helvetica, sans-serif;
+    line-height: 46px;
+    color: rgb(104, 126, 136);
+}
+
+div#stepgoal{
+    top: 10px;
+}
+
+div#timegoal{
+    top: 75px;
+}
+
+div#calgoal{
+    top:140px;
+    left: 203px;
+}
+
+.unit{
+    position: absolute;
+    width: 52px;
+    height:46px;
+    left: 250px;
+    font-size: 17px;
+    font-family: "微软雅黑", Arial, Helvetica, sans-serif;
+    line-height: 46px;
+    color: rgb(104, 126, 136);
+}
+
+div#stepunit{
+    top: 10px;
+}
+
+div#timeunit{
+    top: 75px;
+    left: 235px;
+}
+
+div#calunit{
+    top: 140px;
+    left: 235px;
+}
+
+/*运动曲线图*/
+div#chart{
+    position: absolute;
+    top: 300px;
+    width: 1000px;
+    height: 500px;
+    border-bottom: dashed 1px;
+}
+
+/*运动总量*/
+div#total{
+    position: absolute;
+    top: 800px;
+    width: 1000px;
+    height: 500px;
+}
